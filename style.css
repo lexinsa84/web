@@ -1622,51 +1622,52 @@ h4 {
   
   /* Мобильная адаптация */
   
-  .middleMapAndForm {
-    display: none;
-  }
-  
-  @media screen and (max-width: 1000px) {
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
     .mapAndForm {
       display: none;
+      padding: 3% 5%;
     }
   
     .middleMapAndForm {
-      
+      display: block;
       width: 100%;
+      height: 100%;
     }
   
     .middleMap {
       width: 100%;
+      height: 50%;
       padding-top: 3%;
     }
   
     .middleMap img {
       width: 100%;
-      height: auto;
     }
   
     .middleForm {
       background-color: white;
       text-align: center;
-      padding: 5% 5%;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
     }
   
     .middleForm h2 {
       color: black;
     }
   
-    .middleForm h3 {
-      padding-top: 5%;
+    .inp {
+      margin-top: 5%;
     }
   
-    .middleForm input,
-    .middleForm select {
+    .middleForm input {
       height: 35px;
-      width: 100%;
-      border: 2px solid var(--input-border);
-      margin-top: 5px;
-      box-sizing: border-box;
+      border: 2px solid #cbcaca;
+    }
+  
+    .middleForm h3 {
+      padding-top: 5%;
     }
   
     .fone {
@@ -1674,8 +1675,73 @@ h4 {
     }
   
     .explanations {
-      margin-top: 5px;
-      padding: 0 8%;
+      margin-top: 2px;
+    }
+  
+    .middleForm button {
+      width: 200px;
+      height: 40px;
+      color: #fffdfd;
+      background-color: #2a1d17;
+      border-radius: 2px;
+    }
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 699px) {
+    .mapAndForm {
+      display: none;
+      padding: 3% 5%;
+    }
+  
+    .middleMapAndForm {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .middleMap {
+      width: 100%;
+      height: 50%;
+      padding-top: 3%;
+    }
+  
+    .middleMap img {
+      width: 100%;
+    }
+  
+    .middleForm {
+      background-color: white;
+      text-align: center;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
+    }
+  
+    .middleForm h2 {
+      color: black;
+    }
+  
+    .inp {
+      margin-top: 5%;
+    }
+  
+    .middleForm input {
+      height: 35px;
+      border: 2px solid #cbcaca;
+    }
+  
+    .middleForm h3 {
+      padding-top: 5%;
+    }
+  
+    .fone {
+      width: 65%;
+    }
+  
+    .explanations {
+      margin-top: 2px;
+      padding-left: 8%;
       text-align: left;
       font-size: 11px;
     }
@@ -1683,34 +1749,76 @@ h4 {
     .middleForm button {
       width: 200px;
       height: 40px;
-      background-color: var(--primary-bg);
-      color: var(--text-light);
+      color: #fffdfd;
+      background-color: #2a1d17;
       border-radius: 2px;
-      margin-top: 10px;
     }
-    @media (max-width: 768px) {
-        .mapAndForm {
-          flex-direction: column;
-        }
-      
-        .map {
-          min-height: 300px;
-        }
-      
-        .callback-form {
-          margin-top: 20px;
-        }
-      }
-      
-    @media screen and (max-width: 400px) {
-      .fone {
-        width: 80%;
-      }
+  }
   
-      .explanations {
-        font-size: 9px;
-        padding-left: 3%;
-      }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .mapAndForm {
+      display: none;
+      padding: 3% 5%;
+    }
+  
+    .middleMapAndForm {
+      display: block;
+      width: 99.5%;
+      height: 100%;
+    }
+  
+    .middleMap {
+      width: 100%;
+      height: 50%;
+      padding-top: 3%;
+    }
+  
+    .middleMap img {
+      width: 100%;
+    }
+  
+    .middleForm {
+      background-color: white;
+      text-align: center;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
+    }
+  
+    .middleForm h2 {
+      color: black;
+    }
+  
+    .inp {
+      margin-top: 5%;
+    }
+  
+    .middleForm input {
+      height: 35px;
+      border: 2px solid #cbcaca;
+    }
+  
+    .middleForm h3 {
+      padding-top: 5%;
+    }
+  
+    .fone {
+      width: 75%;
+    }
+  
+    .explanations {
+      margin-top: 2px;
+      font-size: 8px;
+      padding-left: 3%;
+    }
+  
+    .middleForm button {
+      width: 200px;
+      height: 40px;
+      color: #fffdfd;
+      background-color: #2a1d17;
+      border-radius: 2px;
     }
   }
   
