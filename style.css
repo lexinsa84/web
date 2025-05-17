@@ -1499,12 +1499,18 @@ h4 {
 }
 
 /* ////////////////////форма звонка и карта//////////////////////////// */
-.mapAndForm {
+:root {
+    --primary-bg: #2a1d17;
+    --text-light: #fffdfd;
+    --input-border: #cbcaca;
+  }
+  
+  /* Основной блок с картой и формой */
+  .mapAndForm {
     display: flex;
-    margin-top: 3%;
     width: 100%;
-    height: 100%;
     background-color: white;
+    align-items: stretch; /* выравнивание по высоте */
   }
   
   .map {
@@ -1514,6 +1520,14 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
   }
+  
+  .form {
+    flex: 1;
+    padding-left: 10%;
+    padding-right: 9%;
+    background-color: white;
+  }
+  
   
   .callback-form {
     max-width: 600px;
@@ -1529,6 +1543,7 @@ h4 {
   .inp {
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
   }
   
   .inp label {
@@ -1547,34 +1562,30 @@ h4 {
   }
   
   .phone-group select,
+  .phone-group input[type="tel"],
   .phone-group input {
     padding: 5px;
-    width: 100px;
   }
   
-  .phone-group input[type="tel"] {
-    width: 150px;
+  .name, .number, .explanations {
+    width: 85%;
   }
   
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #444;
-    color: white;
-    border: none;
-    cursor: pointer;
+  .code {
+    width: 15%;
   }
   
-  button[type="submit"]:hover {
-    background-color: #666;
-  }
-  
-
-  .form {
+  .fone {
     width: 50%;
-    height: 100%;
-    padding-left: 10%;
-    padding-right: 9%;
-    margin-bottom: 3%;
+  }
+  
+  .number {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .time, .explanations {
+    margin-top: 2%;
   }
   
   .callback-form h2 {
@@ -1582,109 +1593,80 @@ h4 {
   }
   
   .callback-form h3 {
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
     line-height: 27px;
   }
   
   .callback-form h5 {
-    font-weight: 400;
     font-size: 11px;
-    line-height: 15px;
+    font-weight: 400;
     color: #424141;
-  }
-  
-  .name {
-    width: 85%;
-    margin-top: 5%;
-  }
-  
-  .code {
-    width: 15%;
-    height: 5%;
-    margin-top: 5%;
-  }
-  
-  .fone {
-    width: 50%;
-    height: 5%;
-    margin-top: 5%;
-  }
-  
-  .number {
-    width: 85%;
-    display: inline-flex;
-    justify-content: space-between;
-  }
-  
-  .time {
-    margin-top: -5%;
-  }
-  
-  .explanations {
-    width: 85%;
-    margin-top: -5%;
+    line-height: 15px;
   }
   
   .callback-form button {
-    margin-right: 100px;
     width: 200px;
     height: 40px;
-    color: #fffdfd;
-    background-color: #2a1d17;
+    background-color: var(--primary-bg);
+    color: var(--text-light);
     border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    margin-right: 100px;
   }
+  
+  .callback-form button:hover {
+    background-color: #3b2b23;
+  }
+  
+  /* Мобильная адаптация */
   
   .middleMapAndForm {
     display: none;
   }
   
-  @media screen and (min-width: 700px) and (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     .mapAndForm {
       display: none;
-      padding: 3% 5%;
     }
   
     .middleMapAndForm {
       display: block;
       width: 100%;
-      height: 100%;
     }
   
     .middleMap {
       width: 100%;
-      height: 50%;
       padding-top: 3%;
     }
   
     .middleMap img {
       width: 100%;
+      height: auto;
     }
   
     .middleForm {
       background-color: white;
       text-align: center;
-      height: 100%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      margin-top: 3%;
+      padding: 5% 5%;
     }
   
     .middleForm h2 {
       color: black;
     }
   
-    .inp {
-      margin-top: 5%;
-    }
-  
-    .middleForm input {
-      height: 35px;
-      border: 2px solid #cbcaca;
-    }
-  
     .middleForm h3 {
       padding-top: 5%;
+    }
+  
+    .middleForm input,
+    .middleForm select {
+      height: 35px;
+      width: 100%;
+      border: 2px solid var(--input-border);
+      margin-top: 5px;
+      box-sizing: border-box;
     }
   
     .fone {
@@ -1692,73 +1674,8 @@ h4 {
     }
   
     .explanations {
-      margin-top: 2px;
-    }
-  
-    .middleForm button {
-      width: 200px;
-      height: 40px;
-      color: #fffdfd;
-      background-color: #2a1d17;
-      border-radius: 2px;
-    }
-  }
-  
-  @media screen and (min-width: 400px) and (max-width: 699px) {
-    .mapAndForm {
-      display: none;
-      padding: 3% 5%;
-    }
-  
-    .middleMapAndForm {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-  
-    .middleMap {
-      width: 100%;
-      height: 50%;
-      padding-top: 3%;
-    }
-  
-    .middleMap img {
-      width: 100%;
-    }
-  
-    .middleForm {
-      background-color: white;
-      text-align: center;
-      height: 100%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      margin-top: 3%;
-    }
-  
-    .middleForm h2 {
-      color: black;
-    }
-  
-    .inp {
-      margin-top: 5%;
-    }
-  
-    .middleForm input {
-      height: 35px;
-      border: 2px solid #cbcaca;
-    }
-  
-    .middleForm h3 {
-      padding-top: 5%;
-    }
-  
-    .fone {
-      width: 65%;
-    }
-  
-    .explanations {
-      margin-top: 2px;
-      padding-left: 8%;
+      margin-top: 5px;
+      padding: 0 8%;
       text-align: left;
       font-size: 11px;
     }
@@ -1766,78 +1683,24 @@ h4 {
     .middleForm button {
       width: 200px;
       height: 40px;
-      color: #fffdfd;
-      background-color: #2a1d17;
+      background-color: var(--primary-bg);
+      color: var(--text-light);
       border-radius: 2px;
+      margin-top: 10px;
+    }
+  
+    @media screen and (max-width: 400px) {
+      .fone {
+        width: 80%;
+      }
+  
+      .explanations {
+        font-size: 9px;
+        padding-left: 3%;
+      }
     }
   }
   
-  @media screen and (min-width: 300px) and (max-width: 400px) {
-    .mapAndForm {
-      display: none;
-      padding: 3% 5%;
-    }
-  
-    .middleMapAndForm {
-      display: block;
-      width: 99.5%;
-      height: 100%;
-    }
-  
-    .middleMap {
-      width: 100%;
-      height: 50%;
-      padding-top: 3%;
-    }
-  
-    .middleMap img {
-      width: 100%;
-    }
-  
-    .middleForm {
-      background-color: white;
-      text-align: center;
-      height: 100%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      margin-top: 3%;
-    }
-  
-    .middleForm h2 {
-      color: black;
-    }
-  
-    .inp {
-      margin-top: 5%;
-    }
-  
-    .middleForm input {
-      height: 35px;
-      border: 2px solid #cbcaca;
-    }
-  
-    .middleForm h3 {
-      padding-top: 5%;
-    }
-  
-    .fone {
-      width: 75%;
-    }
-  
-    .explanations {
-      margin-top: 2px;
-      font-size: 8px;
-      padding-left: 3%;
-    }
-  
-    .middleForm button {
-      width: 200px;
-      height: 40px;
-      color: #fffdfd;
-      background-color: #2a1d17;
-      border-radius: 2px;
-    }
-  }
   
   /* ////////////////////////подвал Footer////////////////////////// */
   footer {

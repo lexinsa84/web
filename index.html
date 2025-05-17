@@ -359,60 +359,61 @@
           </div>
           <div class="mapAndForm">
             <div class="map" id="map"></div>
-            <div class="callback-form">
-              <h2>Заказать звонок</h2>
-            
-              <form action="#" method="post">
-                <div class="inp">
-                  <label for="surname">Фамилия:</label>
-                  <input type="text" id="surname" name="surname" placeholder="Фамилия"  />
-                </div>
-            
-                <div class="inp">
-                  <label for="name">Имя: *</label>
-                  <input type="text" id="name" name="name" placeholder="Имя" required />
-                </div>
-            
-                <div class="inp">
-                  <label for="patronymic">Отчество:</label>
-                  <input type="text" id="patronymic" name="patronymic" placeholder="Отчество" />
-                </div>
-            
-                <div class="inp">
-                  <label for="email">Электронная почта: *</label>
-                  <input type="email" id="email" name="email" placeholder="example@mail.com" required />
-                </div>
-            
-                <div class="inp number">
-                  <label for="phone">Телефон: *</label>
-                  <div class="phone-group">
-                    <span>+375</span>
-                    <select id="code" name="code" required>
-                      <option value="" disabled selected>Код</option>
-                      <option value="29">29</option>
-                      <option value="33">33</option>
-                      <option value="25">25</option>
-                    </select>
-                    <input type="tel" id="phone" name="phone" placeholder="1234567" pattern="[0-9]{7}" required />
-                  </div>
-                </div>
-            
-                <div class="inp">
-                  <label for="time">Удобное время:</label>
-                  <input type="text" id="time" name="time" placeholder="Пример: 20:00" />
-                </div>
-            
-                <div class="explanations">
-                  <h5>(Укажите удобное для вас время звонка)</h5>
-                </div>
-            
-                <button type="submit">Отправить заявку</button>
-              </form>
+          <form action="https://formsubmit.co/your_email@example.com" method="POST" class="callback-form">
+            <!-- Скрытые поля -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://example.com/thankyou.html">
+            <div class="map" id="map1"></div>
+            <h2>Заказать звонок</h2>
+          
+            <div class="inp">
+              <label for="surname">Фамилия:</label>
+              <input type="text" id="surname" name="surname" placeholder="Фамилия">
             </div>
-            
+          
+            <div class="inp">
+              <label for="name">Имя: *</label>
+              <input type="text" id="name" name="name" placeholder="Имя" required>
+            </div>
+          
+            <div class="inp">
+              <label for="patronymic">Отчество:</label>
+              <input type="text" id="patronymic" name="patronymic" placeholder="Отчество">
+            </div>
+          
+            <div class="inp">
+              <label for="email">Электронная почта: *</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+          
+            <div class="inp number">
+              <label for="phone">Телефон: *</label>
+              <div class="phone-group">
+                <span>+375</span>
+                <select id="code" name="code" required>
+                  <option value="" disabled selected>Код</option>
+                  <option value="29">29</option>
+                  <option value="33">33</option>
+                  <option value="25">25</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="1234567" pattern="[0-9]{7}" required>
+              </div>
+            </div>
+          
+            <div class="inp">
+              <label for="time">Удобное время:</label>
+              <input type="text" id="time" name="time" placeholder="Пример: 20:00">
+            </div>
+          
+            <div class="explanations">
+              <h5>(Укажите удобное для вас время звонка)</h5>
+            </div>
+          
+            <button type="submit">Отправить заявку</button>
+          </form>
           </div>
-          <!-- для экранов планшетов и телефонов -->
-          <div class="middleMapAndForm">
+          
+          <!-- <div class="middleMapAndForm">
             <div class="map" id="map1"></div>
             <div class="middleForm">
               <div>
@@ -421,7 +422,7 @@
               <div class="inp">
                 <input
                   type="text"
-                  name="surname"
+                  name="surname" 
                   placeholder="Фамилия"
                   class="name" />
               </div>
@@ -466,6 +467,8 @@
               <button>Отправить заявку</button>
             </div>
           </div>
+        -->
+
         </div>
         <footer>
           <div class="address">
