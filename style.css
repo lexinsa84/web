@@ -1505,289 +1505,342 @@ h4 {
     width: 100%;
     height: 100%;
     background-color: white;
-}
-
-.map {
+  }
+  
+  .map {
     width: 50%;
-    background-image: url(./img/Map.jpg);
+    background-image: url(img/Map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+  }
+  
+  .callback-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .callback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .inp {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inp label {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .number .phone-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .phone-group span {
+    font-weight: bold;
+  }
+  
+  .phone-group select,
+  .phone-group input {
+    padding: 5px;
+    width: 100px;
+  }
+  
+  .phone-group input[type="tel"] {
+    width: 150px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #666;
+  }
+  
 
-.form {
+  .form {
     width: 50%;
     height: 100%;
     padding-left: 10%;
     padding-right: 9%;
     margin-bottom: 3%;
-}
-
-.form h2 {
+  }
+  
+  .callback-form h2 {
     color: black;
-}
-
-.form h3 {
+  }
+  
+  .callback-form h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 27px;
-}
-
-.form h5 {
+  }
+  
+  .callback-form h5 {
     font-weight: 400;
     font-size: 11px;
     line-height: 15px;
     color: #424141;
-}
-
-.name {
+  }
+  
+  .name {
     width: 85%;
     margin-top: 5%;
-}
-
-.code {
+  }
+  
+  .code {
     width: 15%;
     height: 5%;
     margin-top: 5%;
-}
-
-.fone {
+  }
+  
+  .fone {
     width: 50%;
     height: 5%;
     margin-top: 5%;
-}
-
-.number {
+  }
+  
+  .number {
     width: 85%;
     display: inline-flex;
     justify-content: space-between;
-}
-
-.time {
+  }
+  
+  .time {
     margin-top: -5%;
-}
-
-.explanations {
+  }
+  
+  .explanations {
     width: 85%;
     margin-top: -5%;
-}
-
-.form button {
+  }
+  
+  .callback-form button {
     margin-right: 100px;
     width: 200px;
     height: 40px;
-    color: #FFFDFD;
-    background-color: #2A1D17;
+    color: #fffdfd;
+    background-color: #2a1d17;
     border-radius: 2px;
-}
-
-.middleMapAndForm {
+  }
+  
+  .middleMapAndForm {
     display: none;
-}
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
     .mapAndForm {
-        display: none;
-        padding: 3% 5%;
+      display: none;
+      padding: 3% 5%;
     }
-
+  
     .middleMapAndForm {
-        display: block;
-        width: 100%;
-        height: 100%;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
-
+  
     .middleMap {
-        width: 100%;
-        height: 50%;
-        padding-top: 3%;
+      width: 100%;
+      height: 50%;
+      padding-top: 3%;
     }
-
+  
     .middleMap img {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .middleForm {
-        background-color: white;
-        text-align: center;
-        height: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-top: 3%;
+      background-color: white;
+      text-align: center;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
     }
-
+  
     .middleForm h2 {
-        color: black;
+      color: black;
     }
-
+  
     .inp {
-        margin-top: 5%;
+      margin-top: 5%;
     }
-
+  
     .middleForm input {
-        height: 35px;
-        border: 2px solid #CBCACA;
+      height: 35px;
+      border: 2px solid #cbcaca;
     }
-
+  
     .middleForm h3 {
-        padding-top: 5%;
+      padding-top: 5%;
     }
-
+  
     .fone {
-        width: 75%;
+      width: 75%;
     }
-
+  
     .explanations {
-        margin-top: 2px;
+      margin-top: 2px;
     }
-
+  
     .middleForm button {
-        width: 200px;
-        height: 40px;
-        color: #FFFDFD;
-        background-color: #2A1D17;
-        border-radius: 2px;
+      width: 200px;
+      height: 40px;
+      color: #fffdfd;
+      background-color: #2a1d17;
+      border-radius: 2px;
     }
-
-}
-
-@media screen and (min-width: 400px) and (max-width: 699px) {
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 699px) {
     .mapAndForm {
-        display: none;
-        padding: 3% 5%;
+      display: none;
+      padding: 3% 5%;
     }
-
+  
     .middleMapAndForm {
-        display: block;
-        width: 100%;
-        height: 100%;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
-
+  
     .middleMap {
-        width: 100%;
-        height: 50%;
-        padding-top: 3%;
+      width: 100%;
+      height: 50%;
+      padding-top: 3%;
     }
-
+  
     .middleMap img {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .middleForm {
-        background-color: white;
-        text-align: center;
-        height: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-top: 3%;
+      background-color: white;
+      text-align: center;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
     }
-
+  
     .middleForm h2 {
-        color: black;
+      color: black;
     }
-
+  
     .inp {
-        margin-top: 5%;
+      margin-top: 5%;
     }
-
+  
     .middleForm input {
-        height: 35px;
-        border: 2px solid #CBCACA;
+      height: 35px;
+      border: 2px solid #cbcaca;
     }
-
+  
     .middleForm h3 {
-        padding-top: 5%;
+      padding-top: 5%;
     }
-
+  
     .fone {
-        width: 65%;
+      width: 65%;
     }
-
+  
     .explanations {
-        margin-top: 2px;
-        padding-left: 8%;
-        text-align: left;
-        font-size: 11px;
+      margin-top: 2px;
+      padding-left: 8%;
+      text-align: left;
+      font-size: 11px;
     }
-
+  
     .middleForm button {
-        width: 200px;
-        height: 40px;
-        color: #FFFDFD;
-        background-color: #2A1D17;
-        border-radius: 2px;
+      width: 200px;
+      height: 40px;
+      color: #fffdfd;
+      background-color: #2a1d17;
+      border-radius: 2px;
     }
-}
-
-@media screen and (min-width: 300px) and (max-width: 400px) {
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 400px) {
     .mapAndForm {
-        display: none;
-        padding: 3% 5%;
+      display: none;
+      padding: 3% 5%;
     }
-
+  
     .middleMapAndForm {
-        display: block;
-        width: 99.5%;
-        height: 100%;
+      display: block;
+      width: 99.5%;
+      height: 100%;
     }
-
+  
     .middleMap {
-        width: 100%;
-        height: 50%;
-        padding-top: 3%;
+      width: 100%;
+      height: 50%;
+      padding-top: 3%;
     }
-
+  
     .middleMap img {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .middleForm {
-        background-color: white;
-        text-align: center;
-        height: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-top: 3%;
+      background-color: white;
+      text-align: center;
+      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-top: 3%;
     }
-
+  
     .middleForm h2 {
-        color: black;
+      color: black;
     }
-
+  
     .inp {
-        margin-top: 5%;
+      margin-top: 5%;
     }
-
+  
     .middleForm input {
-        height: 35px;
-        border: 2px solid #CBCACA;
+      height: 35px;
+      border: 2px solid #cbcaca;
     }
-
+  
     .middleForm h3 {
-        padding-top: 5%;
+      padding-top: 5%;
     }
-
+  
     .fone {
-        width: 75%;
+      width: 75%;
     }
-
+  
     .explanations {
-        margin-top: 2px;
-        font-size: 8px;
-        padding-left: 3%;
+      margin-top: 2px;
+      font-size: 8px;
+      padding-left: 3%;
     }
-
+  
     .middleForm button {
-        width: 200px;
-        height: 40px;
-        color: #FFFDFD;
-        background-color: #2A1D17;
-        border-radius: 2px;
+      width: 200px;
+      height: 40px;
+      color: #fffdfd;
+      background-color: #2a1d17;
+      border-radius: 2px;
     }
-}
-
-/* ////////////////////////подвал Footer////////////////////////// */
-footer {
+  }
+  
+  /* ////////////////////////подвал Footer////////////////////////// */
+  footer {
     position: absolute;
     left: 0;
     padding-left: 5%;
@@ -1796,266 +1849,264 @@ footer {
     height: 35%;
     background-color: #464547;
     text-align: left;
-    color: #FFFBFB;
+    color: #fffbfb;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-}
-
-.address,
-.numbers,
-.social {
+  }
+  
+  .address,
+  .numbers,
+  .social {
     width: 17%;
     height: 100%;
-}
-
-.numbers,
-.social {
+  }
+  
+  .numbers,
+  .social {
     margin-left: 2%;
-}
-
-.icons {
+  }
+  
+  .icons {
     display: flex;
-}
-
-.instagramm,
-.facebook {
+  }
+  
+  .instagramm,
+  .facebook {
     margin-left: 2%;
-}
-
-.partners {
+  }
+  
+  .partners {
     padding-left: 3%;
-}
-
-.partnersLogo {
+  }
+  
+  .partnersLogo {
     display: flex;
-}
-
-.padingTop {
+  }
+  
+  .padingTop {
     padding-top: 17%;
-}
-
-.middleLogo {
+  }
+  
+  .middleLogo {
     padding-left: 7.5%;
-}
-
-.rightLogo {
+  }
+  
+  .rightLogo {
     margin-left: 7.5%;
-}
-
-.miniFooter {
+  }
+  
+  .miniFooter {
     display: none;
-}
-
-/* ////////////////////////подвал Footer с адаптивом////////////////////////// */
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+  }
+  
+  /* ////////////////////////подвал Footer с адаптивом////////////////////////// */
+  
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
     .miniFooter {
-        display: none;
+      display: none;
     }
-
+  
     footer {
-        position: absolute;
-        left: 0;
-        padding-left: 3%;
-        padding-right: 0.5%;
-        display: flex;
-        width: 100%;
-        height: 20%;
-        background-color: #464547;
-        text-align: left;
-        color: #FFFBFB;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 15px;
+      position: absolute;
+      left: 0;
+      padding-left: 3%;
+      padding-right: 0.5%;
+      display: flex;
+      width: 100%;
+      height: 20%;
+      background-color: #464547;
+      text-align: left;
+      color: #fffbfb;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
     }
-
+  
     footer h4 {
-        font-size: 10px;
+      font-size: 10px;
     }
-
+  
     footer img {
-        width: 80%;
+      width: 80%;
     }
-
+  
     .address,
     .numbers,
     .social {
-        width: 17%;
-        height: 50%;
+      width: 17%;
+      height: 50%;
     }
-
+  
     .numbers,
     .social {
-        margin-left: 2%;
+      margin-left: 2%;
     }
-
+  
     .icons {
-        display: flex;
+      display: flex;
     }
-
+  
     .icons a {
-        height: 80%;
+      height: 80%;
     }
-
+  
     .instagramm,
     .facebook {
-        margin-left: 2%;
+      margin-left: 2%;
     }
-
+  
     .partners {
-        padding-left: 3%;
+      padding-left: 3%;
     }
-
+  
     .partnersLogo {
-        display: flex;
+      display: flex;
     }
-
+  
     .padingTop {
-        padding-top: 15%;
+      padding-top: 15%;
     }
-
+  
     .middleLogo {
-        padding-left: 3%;
+      padding-left: 3%;
     }
-
+  
     .rightLogo {
-        margin-left: 2%;
+      margin-left: 2%;
     }
-}
-
-@media screen and (min-width: 400px) and (max-width: 699px) {
-
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 699px) {
     footer {
-        display: none;
+      display: none;
     }
-
+  
     .miniFooter {
-        display: block;
+      display: block;
     }
-
+  
     .miniFooter {
-        display: block;
-        background-color: #464547;
-        color: #FFFBFB;
-        text-align: left;
-        padding: 5%;
+      display: block;
+      background-color: #464547;
+      color: #fffbfb;
+      text-align: left;
+      padding: 5%;
     }
-
+  
     .miniFooter h4 {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 13px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 13px;
     }
-
+  
     .miniFootersocialAndPartners {
-        display: flex;
+      display: flex;
     }
-
+  
     .miniFooterSocial {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .miniFooterAdress {
-        white-space: nowrap;
+      white-space: nowrap;
     }
-
+  
     .miniPartnersLogo {
-        display: flex;
-        margin-left: -70%;
+      display: flex;
+      margin-left: -70%;
     }
-
+  
     .miniPartnersLogo img {
-        width: 120%;
+      width: 120%;
     }
-
-    .rightLogo>img {
-        width: 116.5%;
+  
+    .rightLogo > img {
+      width: 116.5%;
     }
-
+  
     .miniFooterPartners {
-        height: 30%;
-        width: 60%;
+      height: 30%;
+      width: 60%;
     }
-
+  
     .miniFooterPartners h4 {
-        margin-left: -70%;
+      margin-left: -70%;
     }
-
+  
     .miniFooterNumbers {
-        display: flex;
-        margin-right: 30%;
-        justify-content: space-between;
+      display: flex;
+      margin-right: 30%;
+      justify-content: space-between;
     }
-}
-
-@media screen and (min-width: 300px) and (max-width: 400px) {
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 400px) {
     footer {
-        display: none;
+      display: none;
     }
-
+  
     .miniFooter {
-        display: block;
-        background-color: #464547;
-        color: #FFFBFB;
-        text-align: left;
-        padding: 5%;
+      display: block;
+      background-color: #464547;
+      color: #fffbfb;
+      text-align: left;
+      padding: 5%;
     }
-
+  
     .miniFooter h4 {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 13px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 13px;
     }
-
+  
     .miniFootersocialAndPartners {
-        display: flex;
+      display: flex;
     }
-
+  
     .miniFooterSocial {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .miniFooterAdress {
-        white-space: nowrap;
+      white-space: nowrap;
     }
-
+  
     .miniPartnersLogo {
-        display: flex;
-        margin-left: -80%;
+      display: flex;
+      margin-left: -80%;
     }
-
+  
     .miniPartnersLogo img {
-        width: 120%;
+      width: 120%;
     }
-
-    .rightLogo>img {
-        width: 116.5%;
+  
+    .rightLogo > img {
+      width: 116.5%;
     }
-
+  
     .miniFooterPartners {
-        height: 30%;
-        width: 60%;
+      height: 30%;
+      width: 60%;
     }
-
+  
     .miniFooterPartners h4 {
-        margin-left: -80%;
+      margin-left: -80%;
     }
-
+  
     .miniFooterNumbers {
-        display: flex;
-        margin-right: 30%;
-        justify-content: space-between;
+      display: flex;
+      margin-right: 30%;
+      justify-content: space-between;
     }
-}
-
-
-/* //////////////////////модальное окно заказа звонка///////////////////////////  */
-.is-open-modal {
+  }
+  
+  /* //////////////////////модальное окно заказа звонка///////////////////////////  */
+  .is-open-modal {
     overflow: hidden;
-}
-
-.modal {
+  }
+  
+  .modal {
     box-sizing: border-box;
     position: fixed;
     z-index: 1000;
@@ -2067,14 +2118,13 @@ footer {
     overflow: auto;
     padding: 3rem;
     display: none;
-}
-
-.modal.is-open {
+  }
+  
+  .modal.is-open {
     display: block;
-}
-
-
-.dialog {
+  }
+  
+  .dialog {
     box-sizing: border-box;
     width: 70%;
     max-width: 100%;
@@ -2085,29 +2135,29 @@ footer {
     border-radius: 5px;
     padding: 1rem;
     text-align: center;
-}
-
-.modalForm h2 {
+  }
+  
+  .modalForm h2 {
     color: black;
-}
-
-.modalForm input {
+  }
+  
+  .modalForm input {
     margin-top: 5%;
-}
-
-.modalForm h3 {
+  }
+  
+  .modalForm h3 {
     margin-top: 5%;
-}
-
-.modalForm h5 {
+  }
+  
+  .modalForm h5 {
     margin-top: 10%;
-}
-
-.modalForm button {
-    background-color: #2A1D17;
-    color: #FFFDFD;
+  }
+  
+  .modalForm button {
+    background-color: #2a1d17;
+    color: #fffdfd;
     border-radius: 2px;
-}
+  }
 
 /* ...................меню бургер............... */
 /*  COLORS

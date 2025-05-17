@@ -358,60 +358,62 @@
             <span class="slider-dots_item" onclick="currentSlide(4)"></span>
           </div>
           <div class="mapAndForm">
-            <div class="map"></div>
-            <div class="form">
-              <div>
-                <h2>Заказать звонок</h2>
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="surname"
-                  placeholder="Фамилия"
-                  class="name" />
-              </div>
-              <div>
-                <input type="text" name="name" placeholder="Имя" class="name" />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="patronymic"
-                  placeholder="Отчество"
-                  class="name" />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="E-mail"
-                  placeholder="Электионная почта"
-                  class="name" />
-              </div>
-              <div class="number">
-                <h3>+375</h3>
-                <input type="number" placeholder="29" class="code" /><input
-                  type="number"
-                  class="fone" />
-              </div>
-              <div class="time">
-                <input
-                  type="text"
-                  name="time"
-                  placeholder="Укажите время (пример 20:00)"
-                  class="name" />
-              </div>
-              <div class="explanations">
-                <h5>
-                  (В данной строке необходимо указать удобное для вас время
-                  звонка)
-                </h5>
-              </div>
-              <button>Отправить заявку</button>
+            <div class="map" id="map"></div>
+            <div class="callback-form">
+              <h2>Заказать звонок</h2>
+            
+              <form action="#" method="post">
+                <div class="inp">
+                  <label for="surname">Фамилия:</label>
+                  <input type="text" id="surname" name="surname" placeholder="Фамилия"  />
+                </div>
+            
+                <div class="inp">
+                  <label for="name">Имя: *</label>
+                  <input type="text" id="name" name="name" placeholder="Имя" required />
+                </div>
+            
+                <div class="inp">
+                  <label for="patronymic">Отчество:</label>
+                  <input type="text" id="patronymic" name="patronymic" placeholder="Отчество" />
+                </div>
+            
+                <div class="inp">
+                  <label for="email">Электронная почта: *</label>
+                  <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+                </div>
+            
+                <div class="inp number">
+                  <label for="phone">Телефон: *</label>
+                  <div class="phone-group">
+                    <span>+375</span>
+                    <select id="code" name="code" required>
+                      <option value="" disabled selected>Код</option>
+                      <option value="29">29</option>
+                      <option value="33">33</option>
+                      <option value="25">25</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567" pattern="[0-9]{7}" required />
+                  </div>
+                </div>
+            
+                <div class="inp">
+                  <label for="time">Удобное время:</label>
+                  <input type="text" id="time" name="time" placeholder="Пример: 20:00" />
+                </div>
+            
+                <div class="explanations">
+                  <h5>(Укажите удобное для вас время звонка)</h5>
+                </div>
+            
+                <button type="submit">Отправить заявку</button>
+              </form>
             </div>
+            
           </div>
           <!-- для экранов планшетов и телефонов -->
           <div class="middleMapAndForm">
-            <div class="middleMap"><img src="./img/MiniMap.jpg" alt="" /></div>
+            <div class="map" id="map1"></div>
             <div class="middleForm">
               <div>
                 <h2>Заказать звонок</h2>
@@ -424,6 +426,7 @@
                   class="name" />
               </div>
               <div class="inp">
+
                 <input type="text" name="name" placeholder="Имя" class="name" />
               </div>
               <div class="inp">
@@ -434,8 +437,9 @@
                   class="name" />
               </div>
               <div class="inp">
+
                 <input
-                  type="text"
+                  type="email"
                   name="E-mail"
                   placeholder="Электионная почта"
                   class="name" />
@@ -721,35 +725,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./script.js"></script>
-
-    <script>
-      const slides = document.querySelectorAll('.slide');
-      const prev = document.querySelector('.prev');
-      const next = document.querySelector('.next');
-      let index = 0;
-    
-      function showSlide(i) {
-        slides.forEach((slide, idx) => {
-          slide.classList.remove('active');
-          if (idx === i) slide.classList.add('active');
-        });
-      }
-    
-      prev.addEventListener('click', () => {
-        index = (index - 1 + slides.length) % slides.length;
-        showSlide(index);
-      });
-    
-      next.addEventListener('click', () => {
-        index = (index + 1) % slides.length;
-        showSlide(index);
-      });
-    
-      // Автопереключение (если нужно):
-      // setInterval(() => next.click(), 5000);
-    </script>
-    
-    
-
+     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="map.js"></script>
   </body>
 </html>
