@@ -396,7 +396,15 @@ header button {
   }
 
   .slide:nth-child(2) {
-    background-image: url(./img/fon2.png); /* Замените на другое изображение */
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    background-image: url(./img/fon2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 20%;
+    padding-top: 5%;
   }
 
   .prev, .next {
