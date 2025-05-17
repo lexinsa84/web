@@ -1688,7 +1688,20 @@ h4 {
       border-radius: 2px;
       margin-top: 10px;
     }
-  
+    @media (max-width: 768px) {
+        .mapAndForm {
+          flex-direction: column;
+        }
+      
+        .map {
+          min-height: 300px;
+        }
+      
+        .callback-form {
+          margin-top: 20px;
+        }
+      }
+      
     @media screen and (max-width: 400px) {
       .fone {
         width: 80%;
